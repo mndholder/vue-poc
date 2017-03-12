@@ -1,0 +1,13 @@
+// Yahoo PureCSS
+@import "~purecss/build/pure.css";
+// Lato font
+@import "../../../static/fonts/Lato2OFLWeb/Lato/latofonts.css";
+// Font usage
+html,
+button,
+input,
+select,
+textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: "LatoWeb", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

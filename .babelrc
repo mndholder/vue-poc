@@ -1,0 +1,27 @@
+{
+  "presets": [
+    ["env", { "modules": false }],
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-class-properties",
+    "transform-runtime"
+  ],
+  "comments": false,
+  "env": {
+    "test": {
+      "presets": ["env", "stage-2"],
+      "plugins": [
+        ["istanbul", {
+          "exclude": [
+            "**/*.spec.js",
+            "test/unit/index.js"
+          ]
+        }],
+        "transform-decorators-legacy",
+        "transform-class-properties"
+      ]
+    }
+  }
+}
