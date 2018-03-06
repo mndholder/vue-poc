@@ -4,7 +4,7 @@
       <button class="pure-button" @click="refresh">Refresh</button>
     </div>
     <ul>
-      <li v-for="workspace in list">{{workspace.name}}</li>
+      <li v-for="workspace in list" :key="workspace.id">{{workspace.name}}</li>
     </ul>
   </div>
 </template>
